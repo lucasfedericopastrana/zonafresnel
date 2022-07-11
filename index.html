@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Calculo de Zona de Fresnel</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+  <nav class="light-blue lighten-1" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" class="brand-logo"><i class="material-icons">signal_wifi_4_bar</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#">Comprar</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="sidenav">
+        <li><a href="#">Comprar</a></li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <br><br>
+      <h1 class="header center orange-text">Zona de Fresnel</h1>
+      <div class="row center">
+        <h5 class="header col s12 light">Una zona de Fresnel es una de una serie de regiones elipsoidales, de diámetro polar extenso, concéntricas, de espacio entre y alrededor de una antena que transmite y un sistema de antena que recibe.</h5>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="section">
+
+      <!--   Icon Section   -->
+      <div class="row">
+        <div class="col s12 m12">
+          <div class="icon-block">
+            <h2 class="center light-blue-text"><i class="material-icons">settings_input_antenna</i></h2>
+            <h5 class="center">Ingresar los datos para proceder al calculo</h5>
+            <br>
+            <form>
+              <label for="distancia"><h6>Ingresar Distancia desde el punto A al punto B en KILOMETROS:</h6></label><br>
+              <input type="text" id="distancia" name="distancia"><br>
+              <label for="frecuencia"><h6>Frecuencia (GHz):</h6></label><br>
+              <input type="text" id="frecuencia" name="frecuencia">
+            </form> 
+          </div>
+        </div>
+      </div>
+      <div class="row center">
+        <button id="download-button" class="btn-large waves-effect waves-light orange" onclick="calcularFresnel()">CALCULAR</button>
+      </div>
+
+    </div>
+    <br><br>
+  </div>
+
+  <footer class="page-footer orange">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Redes</h5>
+          <p class="grey-text text-lighten-4">Trabajo Practico de Redes.</p>
+
+
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Contacto</h5>
+          <ul>
+            <li><a class="white-text"><i class="material-icons">stay_current_portrait</i>3584250531</a></li>
+            <li><a class="white-text"><i class="material-icons">email</i>l.pastranaparrello@itecriocuarto.org.ar</a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Itec</h5>
+          <ul>
+            <li><a class="white-text"><i class="material-icons">local_phone</i>0358 464-3036</a></li>
+            <li><a class="white-text"><i class="material-icons">directions</i>Tejerina Norte 783, Río Cuarto, Córdoba</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Desarrolado por <a class="orange-text text-lighten-3" href="http://materializecss.com">Lucas Federico Pastrana</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script src="js/logica.js"></script>
+  </body>
+</html>
